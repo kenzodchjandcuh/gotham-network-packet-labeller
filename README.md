@@ -198,13 +198,14 @@ This project is released under the [Apache 2.0 license](LICENSE)
 ## Authors
 
 **Othmane Belarbi**
+**kenzo_project**
 
 
 ## Citation
 
 If you find this code useful in your research, please cite this article as:
 ```bibtex
-@misc{belarbi2025gothamdataset2025reproducible,
+@misc{belarbi2025gothamdatast2025reproducible,
       title={Gotham Dataset 2025: A Reproducible Large-Scale IoT Network Dataset for Intrusion Detection and Security Research}, 
       author={Othmane Belarbi and Theodoros Spyridopoulos and Eirini Anthi and Omer Rana and Pietro Carnelli and Aftab Khan},
       year={2025},
