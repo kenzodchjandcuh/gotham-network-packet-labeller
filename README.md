@@ -111,6 +111,20 @@ Use the `count_all_labels.py` script to quickly aggregate the distribution of at
 python count_all_labels.py
 ```
 
+**Attack Types (12 Categories Explained):**
+1. **`Benign`**: Normal network traffic without attacks.
+2. **`TCP Scan` & `UDP Scan`**: Network reconnaissance and scanning.
+3. **`Telnet Brute Force`**: Repeated attempts to hack Telnet passwords.
+4. **`Mirai Flooding (TCP/UDP/GRE)`**: Massive DDoS attacks from the Mirai botnet.
+5. **`Merlin Flooding (TCP/UDP/ICMP)`**: DDoS variants of Merlin.
+6. **`CoAP Amplification`**: DDoS amplification attacks leveraging the CoAP IoT protocol.
+7. **`Mirai/Merlin C&C Communication`**: Communication between hatched malware and the attacker's Command & Control server.
+8. **`Ingress Tool Transfer`**: Hackers downloading advanced tools/malware into compromised IoT devices.
+9. **`File Download`**: Exfiltration or suspicious file downloads.
+10. **`Reporting`**: Status reports sent from malware back to the hacker's server.
+11. **`C&C Communication`**: General botnet communication.
+12. **`Unknown`**: Anomalies detected but lacking a precise classification in the labeller.
+
 **Dataset Distribution Overview (Total 35,133,026 Records):**
 - **Benign**: 12,256,883
 - **Mirai UDP Flooding**: 8,897,895
