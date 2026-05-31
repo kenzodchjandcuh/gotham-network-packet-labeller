@@ -101,11 +101,24 @@ It automatically handles categorical label encoding, feature scaling, and prints
 python train_models.py
 ```
 
+**Evaluation Results (Binary Classification on 55k subset):**
+- **Random Forest**: Accuracy `100.00%`, F1-Score `100.00%`
+- **Support Vector Machine (LinearSVC)**: Accuracy `99.11%`, F1-Score `99.49%`
+
 ### **2. Counting Dataset Labels**
 Use the `count_all_labels.py` script to quickly aggregate the distribution of attack categories (e.g., Mirai, Merlin, Benign) across all CSV files in the `data/processed/` directory.
 ```bash
 python count_all_labels.py
 ```
+
+**Dataset Distribution Overview (~35 Million Records):**
+- **Benign**: 12.2M
+- **Mirai Flooding (UDP/TCP/GRE)**: ~21.3M
+- **TCP/UDP Scans**: ~742K
+- **CoAP Amplification**: 274K
+- **Telnet Brute Force**: 227K
+- **Merlin Flooding (TCP/ICMP/UDP)**: ~207K
+- **Other C&C / Ingress**: ~60K
 
 
 ## **Files and Folders Structure**
