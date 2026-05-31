@@ -111,14 +111,25 @@ Use the `count_all_labels.py` script to quickly aggregate the distribution of at
 python count_all_labels.py
 ```
 
-**Dataset Distribution Overview (~35 Million Records):**
-- **Benign**: 12.2M
-- **Mirai Flooding (UDP/TCP/GRE)**: ~21.3M
-- **TCP/UDP Scans**: ~742K
-- **CoAP Amplification**: 274K
-- **Telnet Brute Force**: 227K
-- **Merlin Flooding (TCP/ICMP/UDP)**: ~207K
-- **Other C&C / Ingress**: ~60K
+**Dataset Distribution Overview (Total 35,133,026 Records):**
+- **Benign**: 12,256,883
+- **Mirai UDP Flooding**: 8,897,895
+- **Mirai TCP Flooding**: 6,548,173
+- **Mirai GRE Flooding**: 5,911,401
+- **TCP Scan**: 737,764
+- **CoAP Amplification**: 274,837
+- **Telnet Brute Force**: 227,649
+- **Merlin TCP Flooding**: 120,000
+- **Merlin ICMP Flooding**: 57,580
+- **Merlin UDP Flooding**: 29,996
+- **Merlin C&C Communication**: 29,356
+- **Ingress Tool Transfer**: 21,587
+- **Unknown**: 7,670
+- **File Download**: 7,196
+- **UDP Scan**: 4,242
+- **Mirai C&C Communication**: 1,074
+- **C&C Communication**: 528
+- **Reporting**: 450
 
 
 ## **Files and Folders Structure**
