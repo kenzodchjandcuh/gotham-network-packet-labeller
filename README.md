@@ -32,7 +32,18 @@ This repository contains a pipeline for processing the network traffic dataset, 
             $ make init
         ```
     First, the command line will create your vcirtual environment and install the dependencies needed to run the app. Then, it will create the data folders.
-    3. Move the dataset to the ./data/raw folder.
+    3. Move the dataset to the `./data/raw` folder.
+
+    > **Windows Users Note**: If you do not have `make` installed, you can initialize the project by running the provided PowerShell script:
+    > ```powershell
+    > .\init.ps1
+    > ```
+    > This will create the `venv`, install dependencies, and create all necessary data folders.
+
+## **Using the Pre-Processed Zenodo Dataset**
+
+If you downloaded the official `GothamDataset2025.zip` from Zenodo, it already contains a `processed/` folder with fully cleaned and labelled CSV files. 
+You **do not** need to run the extraction or cleaning pipeline if you just want to train Machine Learning models. You can directly use the `.csv` files inside the `data/processed/` folder.
 
 
 ## **Pipeline Tasks**
@@ -77,6 +88,24 @@ make run_pipeline
 ```
 
 This will run feature extraction, feature cleaning, and data labelling one after the other, automating the entire pipeline.
+
+
+## **Machine Learning & Utilities**
+
+We have added a few custom scripts to help you get started with building Intrusion Detection Systems (IDS):
+
+### **1. Training Machine Learning Models**
+Use the `train_models.py` script to train and evaluate **Random Forest** and **Support Vector Machine (SVM)** on the dataset.
+It automatically handles categorical label encoding, feature scaling, and prints Accuracy and F1-score.
+```bash
+python train_models.py
+```
+
+### **2. Counting Dataset Labels**
+Use the `count_all_labels.py` script to quickly aggregate the distribution of attack categories (e.g., Mirai, Merlin, Benign) across all CSV files in the `data/processed/` directory.
+```bash
+python count_all_labels.py
+```
 
 
 ## **Files and Folders Structure**
