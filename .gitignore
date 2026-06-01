@@ -164,3 +164,7 @@ cython_debug/
 
 data/
 img/
+*.csv
+*.pcap
+data/
+hasil/mirai_dataset.csv
